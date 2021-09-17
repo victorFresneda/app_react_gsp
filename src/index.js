@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import CounterApp from './EjercicioUno';
+import './index.css';
 
 
 
-const saludo = <h1>Empezemos</h1>;
+
+
 
 const divRoot = document.querySelector('#root');
 
-ReactDOM.render(saludo, divRoot);
+ReactDOM.render(<CounterApp  value={10} />, divRoot);
