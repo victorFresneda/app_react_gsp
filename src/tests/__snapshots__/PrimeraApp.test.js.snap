@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <PrimeraApp/> Debe mostrar <PrimeraApp/> correctamente  1`] = `
+<Fragment>
+  <h1>
+     
+    Titulo enviado desde los props
+     
+  </h1>
+  <p>
+     
+    Parrafo desde default props
+     
+  </p>
+</Fragment>
+`;

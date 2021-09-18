@@ -3,13 +3,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const PruebaApp = ({ enviado, parrafo='Soy un parrafo del segundo prop' }) => {
+const PruebaApp = ({ enviado="Titulo enviado desde los props", parrafo }) => {
 
     
 
     return (
         <>
-        <h1> { enviado } </h1>
+        <h1>{ enviado }!!!</h1>
         <p> {parrafo} </p>
         </>
     );

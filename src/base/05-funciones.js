@@ -1,12 +1,12 @@
 
 
 
-const saludar2 = ( nombre ) => {
-    return `Hola, ${ nombre }`;
-}
+// const saludar2 = ( nombre ) => {
+//     return `Hola, ${ nombre }`;
+// }
 
-const saludar3 = ( nombre ) => `Hola, ${ nombre }`;
-const saludar4 = () => `Hola Mundo`;
+// const saludar3 = ( nombre ) => `Hola, ${ nombre }`;
+// const saludar4 = () => `Hola Mundo`;
 
 
 
@@ -17,10 +17,10 @@ export const getUser = () => ({
 });
 
 
-
+const nombre = 'victor'
 
 // Tarea
-const getUsuarioActivo = ( nombre ) =>({
+export const getUsuarioActivo = ( nombre ) =>({
     uid: 'ABC567',
     username: nombre
 })
