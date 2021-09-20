@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PrimeraApp from './PrimeraApp';
 import './index.css';
+import CounterApp from './EjercicioUno';
 
 
 
@@ -10,4 +10,4 @@ import './index.css';
 
 const divRoot = document.querySelector('#root');
 
-ReactDOM.render(<PrimeraApp  enviado="Titulo enviado desde los props" />, divRoot);
+ReactDOM.render(<CounterApp  value={ 10 } />, divRoot);

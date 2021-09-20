@@ -7,6 +7,9 @@ import PruebaApp from '../PrimeraApp';
 
 
 describe('Pruebas en <PrimeraApp/>', () => {
+
+
+    const wrapper = shallow( <PruebaApp />);
     
     test('Debe mostrar <PrimeraApp/> correctamente ', () => {
     
@@ -20,6 +23,32 @@ describe('Pruebas en <PrimeraApp/>', () => {
 
         expect( wrapper ).toMatchSnapshot();
     })
+    
+    test('Debe mostrar el parrafo enviado desde los props ', () => {
+        
+        const enviado = 'Titulo enviado desde los props';
+        const parrafo = 'parrafo prueba';
+
+        const wrapper = shallow( 
+            <PruebaApp
+                enviado={enviado}
+                parrafo={parrafo}
+            />);
+
+        const textoParrafo = wrapper.find('p').text();
+        
+
+        expect( textoParrafo ).toBe( parrafo );
+
+    });
+
+    test('Debe de incrementar conel boton de +1', () => {
+
+        const btn1 = wrapper.find('button').at(0).simulate('click');
+        
+    })
+    
+
     
     
 })
